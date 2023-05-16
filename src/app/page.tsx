@@ -5,24 +5,26 @@ import styles from './page.module.css';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <Image
-          className={styles.logo}
+      <picture>
+        <source
+          srcSet='/Samsung_Orig_Wordmark_WHITE_RGB.png'
+          media='(prefers-color-scheme: dark)'
+          width={180}
+          height={45}
+        />
+        <img
           src='/Samsung_Orig_Wordmark_BLUE_RGB.png'
           alt='Samsung Logo'
           width={180}
           height={45}
-          priority
         />
-      </div>
-
+      </picture>
       <Image
         className={styles.image}
         src='/pt_benefit_01_pc.png'
         alt='Samsung Device'
         width={292}
         height={210}
-        priority
       />
       <h1 className={styles.center}>
         <div>나에게 맞는</div>
