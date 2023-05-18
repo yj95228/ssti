@@ -32,7 +32,7 @@ export default function Home() {
       </h1>
 
       <div className={styles.grid}>
-        <Link href='/1' className={styles.card} rel='noopener noreferrer'>
+        <Link href='questions/1' className={styles.card}>
           <h2>
             GO <span>-&gt;</span>
           </h2>
