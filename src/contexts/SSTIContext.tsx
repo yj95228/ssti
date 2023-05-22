@@ -32,7 +32,6 @@ const SSTIContext = createContext<SSTIContextType | null>(null);
 export const SSTIProvider: React.FC<SSTIProviderProps> = ({ children }) => {
   const [scores, setScores] = useState<SSTIScores>(initialScores);
   const updateScore = (dimension: SSTIType, score: number) => {
-    console.log(scores, dimension, scores[dimension]);
     setScores((prevScores) => ({
       ...prevScores,
       [dimension]: prevScores[dimension] + score,
